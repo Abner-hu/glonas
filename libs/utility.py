@@ -12,3 +12,9 @@ class Node(object):
 class Tree(object):
     def __init__(self):
         pass
+
+    def insert(self):
+        pass
+
+    def search(self):
+        pass
