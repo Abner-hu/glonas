@@ -1,2 +1,2 @@
 # glonas
-Scripts for MFG automatic test
+Scripts for manufactuary automatic testing
