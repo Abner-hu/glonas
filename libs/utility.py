@@ -9,7 +9,6 @@ class Node(object):
         self.data = data
 
 
-
 class Route:
     self.data = list
 
@@ -30,6 +29,7 @@ class Route:
 
     def __or__(self, other):
         pass
+
 
 class Tree(object):
     def __init__(self):
