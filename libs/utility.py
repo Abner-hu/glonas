@@ -32,11 +32,21 @@ class Route:
 
 
 class Tree(object):
-    def __init__(self):
-        pass
+    def __init__(self, rootdata):
+        self.root = Node(data=rootdata)
 
-    def insert(self):
-        pass
+    @staticmethod
+    def insert(parent, children):
+        children.parent = parent
+        parent.children.append(children)
 
-    def search(self):
-        pass
+    def search(self, node, data):
+        if node.data == data:
+            return node
+        elif len(node.children) == 0:
+            return None
+        for child in node.children:
+            result = self.search(child, data)
+            if result:
+                return result
+        return None
