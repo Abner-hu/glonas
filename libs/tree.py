@@ -1,4 +1,6 @@
-import pandas as pd
+""" name, tree.py
+
+"""
 
 
 class Node(object):
