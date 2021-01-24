@@ -1,0 +1,2 @@
+class Windows(object):
+    pass
